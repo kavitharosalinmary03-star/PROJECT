@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Signup - Camera Store</title>
+  <style>
+    *{box-sizing:border-box;font-family:Arial, sans-serif}
+    body{margin:0;background:linear-gradient(#eaf7f2,#f0f7f6);display:flex;align-items:center;justify-content:center;height:100vh}
+    .box{background:#fff;padding:22px;border-radius:12px;width:360px;box-shadow:0 10px 30px rgba(0,0,0,0.08)}
+    h2{text-align:center;margin:0 0 12px}
+    label{display:block;margin:10px 0 6px;font-size:14px;color:#333}
+    input[type="text"],input[type="email"],input[type="password"]{
+      width:100%;padding:10px;border-radius:8px;border:1px solid #ddd
+    }
+    .actions{margin-top:14px;display:flex;gap:10px}
+    .btn{flex:1;padding:10px;border-radius:8px;border:0;background:#111;color:#fff;text-align:center;text-decoration:none;cursor:pointer}
+    .note{font-size:13px;color:#666;margin-top:10px;text-align:center}
+    a.link{color:#099;text-decoration:none}
+  </style>
+</head>
+<body>
+
+  <div class="box">
+    <h2>Create Account</h2>
+
+    <form onsubmit="event.preventDefault();alert('Signup successful! (This is demo form)');">
+      <label for="name">Full name</label>
+      <input id="name" type="text" required placeholder="Your name">
+
+      <label for="email">Email</label>
+      <input id="email" type="email" required placeholder="you@example.com">
+
+      <label for="password">Password</label>
+      <input id="password" type="password" required placeholder="Choose a password">
+
+      <div class="actions">
+        <button class="btn" type="submit">Sign Up</button>
+        <a class="btn" href="signin.html" style="background:#777">Cancel</a>
+      </div>
+    </form>
+      
+    <div class="note">
+      
+      Already have an account? <a class="link" href="C:\Users\KAVI\Desktop\html\Online Project Store\sign in.html">Sign in</a>
+     
+    </div>
+  </div>
+
+</body>
+</html>
